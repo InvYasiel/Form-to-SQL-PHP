@@ -1,7 +1,7 @@
 <?php
 //---------------------------------Consulta Agenda---------------------------------   
 $pdo=new PDO("sqlsrv:Server=PC01INFORMATICA\SQLEXPRESS;Database=InventarioAF", "", "");
-$statement=$pdo->prepare("SELECT [ACTIVOFIJO]
+$statement=$pdo->prepare("SELECT [IMPRESO]
 FROM [dbo].[ACTIVOFIJOSINASIGNAR]");
 $statement->execute();
 if (!$statement){
@@ -11,3 +11,4 @@ if (!$statement){
     echo  json_encode($results, JSON_UNESCAPED_UNICODE);
 }
 ?>
+

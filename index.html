@@ -24,36 +24,20 @@
                     <label for="departamento">Departamento: </label>
                     <select class="custom-select" style="height:50px;" id="departamento">
                         <option value="" selected>Seleccione departamento</option>
-                        <option value="S">Sistemas</option>
-                        <option value="U">Ubicación</option>
-                        <option value="P">Producción</option>
                     </select>
                 </div>
                 <div class="form-group  col-md-6">
                     <label for="sociedad">Sociedad: </label>
                     <select class="custom-select" style="height:50px;" id="sociedad">
                         <option value="" selected>Seleccione sociedad</option>
-                        <option value="01">García Pascual</option>
-                        <option value="02">Diaca DOS</option>
-                        <option value="03">Indiscan</option>
                     </select>
                 </div>
             </div>
-
             <div class="form-row">
                 <div class="form-group col-md-6 ">
                     <label for="acFijo">Tipo activo fijo: </label>
                     <select class="custom-select" style="height:50px;" id="acFijo">
-                        <option value="" selected>Seleccione sociedad</option>
-                        <option value="I">Impresora</option>
-                        <option value="P">Monitor</option>
-                        <option value="K">Periféricos (ratón,teclado...)</option>
-                        <option value="M">Móvil / Fijo</option>
-                        <option value="U">USB</option>
-                        <option value="B">Báscula</option>
-                        <option value="H">Habitación</option>
-                        <option value="T">Tablet</option>
-                        <option value="L">Puesto de trabajo</option>
+                        <option value="" selected>Seleccione activo fijo</option>
                     </select>
                 </div>
                 <div class="form-group col-md-3">
@@ -66,8 +50,13 @@
                 </div>
             </div>
             <div class="form-row">
-                <div class="form-group col-md-12"><br>
-                    <button type="button"style="width:100% ;font-size:1em;" id="crear" onclick="generar()" class="btn btn-primary">Generar!</button>
+                <div class="form-group col-md-6">
+                    <br>
+                    <button type="button" style="width:100% ;font-size:1em;" id="crear" onclick="generar()" class="btn btn-primary">Generar!</button>
+                </div>
+                <div class="form-group col-md-6">
+                    <br>
+                    <button type="button" style="width:100% ;font-size:100%;" id="crear" onclick="limpiar()" class="btn btn-primary">Limpiar impresas</button>
                 </div>
             </div>
         </form>
@@ -80,4 +69,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="javascript/select.js"></script>
 <script src="javascript/insertar.js"></script>
+<script src="javascript/opciones.js"></script>
+<script src="javascript/limpiar.js"></script>
+
 </html>

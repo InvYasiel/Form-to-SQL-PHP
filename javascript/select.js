@@ -3,7 +3,6 @@ var numeroCodeBar = 0
 datos();
 
 function datos() {
-    var ref = [];
     if (window.XMLHttpRequest) {
         xmlhttp = new XMLHttpRequest();
     } else {

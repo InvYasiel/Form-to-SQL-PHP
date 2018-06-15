@@ -1,8 +1,8 @@
 <?php
 //---------------------------------Consulta Agenda---------------------------------   
 $pdo=new PDO("sqlsrv:Server=PC01INFORMATICA\SQLEXPRESS;Database=InventarioAF", "", "");
-$statement=$pdo->prepare("SELECT [ACTIVOFIJO]
-FROM [dbo].[ACTIVOFIJOSINASIGNAR]");
+$statement=$pdo->prepare("SELECT [NOMBRE], [VALOR]
+FROM [dbo].[SOCIEDADES]");
 $statement->execute();
 if (!$statement){
     echo 'Error al ejecutar la consulta';
